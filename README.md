@@ -15,5 +15,5 @@ To run the app:
 npm install
 node app.js
 ```
-<br />
-Find the app demo here: [Tweet](https://twitter.com/dbridgedev01/status/1623766414099378177)
+Find the app demo here: 
+[Tweet](https://twitter.com/dbridgedev01/status/1623766414099378177)
