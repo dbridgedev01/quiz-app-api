@@ -1,0 +1,9 @@
+<%- include('partials/header'); -%>
+
+<h1>All Quizzes - Categories</h1>
+
+<% docs.forEach(element => { %>
+<a href="/quizzes/<%= element.category %> "><h2> <%= element.category %></h2></a>
+<% }) %>
+
+<%- include('partials/footer'); -%>

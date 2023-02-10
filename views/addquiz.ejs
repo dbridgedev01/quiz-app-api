@@ -1,0 +1,35 @@
+<%- include('partials/header'); -%>
+
+<form action="/addquiz" method="post" class="p-3 m-2">
+    <div class="form-group">
+    <label for="quizName">Quiz Name</label>
+    <input type="text" autocomplete="off" class="form-control" name="quizName" id="quizName" value="<%= quizName %>">
+    <small id="emailHelp" class="form-text text-muted">Ensure the correct Quiz Name to add to an existing Quiz Category. New Quiz Category is created otherwise.</small>
+</div>
+<div class="form-group">
+    <label for="question">Question</label>
+    <input type="text" autocomplete="off" class="form-control" name="question" id="question">
+</div>
+    <div class="form-group">
+    <label for="choice1">Choice 1</label>
+    <input type="text" autocomplete="off" class="form-control" name="choice1" id="choice1">
+</div>
+    <div class="form-group">
+    <label for="choice2">Choice 2</label>
+    <input type="text" autocomplete="off" class="form-control" name="choice2" id="choice2">
+</div>
+    <div class="form-group">
+    <label for="choice3">Choice 3</label>
+    <input type="text" autocomplete="off" class="form-control" name="choice3" id="choice3">
+</div>
+    <div class="form-group">
+    <label for="choice4">Choice 4</label>
+    <input type="text" autocomplete="off" class="form-control" name="choice4" id="choice4">
+</div>
+<div class="form-group">
+    <label for="answer">Answer</label>
+    <input type="text" autocomplete="off" class="form-control" name="answer" id="answer">
+</div>
+    <button type="submit" class="btn btn-primary mt-3">Add Question</button>
+</form>
+<%- include('partials/footer'); -%>

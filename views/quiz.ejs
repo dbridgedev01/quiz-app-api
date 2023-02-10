@@ -1,0 +1,21 @@
+<%- include('partials/header'); -%>
+
+<h1>Quiz Name: <%= category %> </h1>
+<form method="post" action="/quiz">
+    <button type="submit" class="btn btn-primary" value="<%= category %>" name="addBtn">Add Question</button>
+</form>
+<h2>Questions:</h2>
+<ol>
+    <% quizzes.forEach(quiz => { %>
+    <li>
+        <%= quiz.question %>
+        <ul>
+            <% quiz.choices.forEach(choice => { %>
+             <li> <%= choice %>  </li>
+            <% }) %> 
+        </ul>
+    </li>
+    <% }) %>
+</ol>
+
+<%- include('partials/footer'); -%>
